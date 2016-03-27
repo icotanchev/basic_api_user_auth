@@ -1,0 +1,305 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1[0m  [["auth_token", "k3CJihMdEQsT6L3s8Lcc"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)  [["email", "a"], ["encrypted_password", "$2a$04$bu86.SojbTfrYpIPIu3DY.kjeIrkiMLFUJ2A3QEFJO9Jq2e1.Ma8a"], ["created_at", "2016-03-27 15:24:24.530476"], ["updated_at", "2016-03-27 15:24:24.530476"], ["auth_token", "k3CJihMdEQsT6L3s8Lcc"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'a' LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'hazle@mayert.name' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1[0m  [["auth_token", "CRWrBaA1zpskGpjGgcnj"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "auth_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "elinore@cartwrightrobel.name"], ["encrypted_password", "$2a$04$DB6o2wbdVYZK0clzmlHs8eWdrv.M48aTj93wHONXHV..tjjQxQ2KS"], ["auth_token", "CRWrBaA1zpskGpjGgcnj"], ["created_at", "2016-03-27 15:24:24.567509"], ["updated_at", "2016-03-27 15:24:24.567509"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = 'CRWrBaA1zpskGpjGgcnj' LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'nathen_bartell@rowe.biz' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'nathen_bartell@rowe.biz' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'nathen_bartell@rowe.biz' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@domain.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1[0m  [["auth_token", "auniquetoken123"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = 'auniquetoken123' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'monroe_adams@emardmorar.name' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1[0m  [["auth_token", "9AGHbzr4p1kTUnBTsG9B"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "auth_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "monroe_adams@emardmorar.name"], ["encrypted_password", "$2a$04$GRdIdFHyswR4WNbwQqE7F.43dNaYmrR77HNrwchSdURU0KcxlmamO"], ["auth_token", "9AGHbzr4p1kTUnBTsG9B"], ["created_at", "2016-03-27 15:24:24.594622"], ["updated_at", "2016-03-27 15:24:24.594622"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "NesrXg5CK7PF-bQmySoC"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'judah@toylarson.biz' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1[0m  [["auth_token", "7MFq1xa6duvC65R13Euy"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)  [["email", "judah@toylarson.biz"], ["encrypted_password", "$2a$04$x2dfw8XPv.LoXyzGz.uYjeeWIceFg63qJnuRQzp.acOi89snqOMfO"], ["created_at", "2016-03-27 15:24:24.599038"], ["updated_at", "2016-03-27 15:24:24.599038"], ["auth_token", "7MFq1xa6duvC65R13Euy"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'kieran@west.com' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1[0m  [["auth_token", "A53TzJ9pSqJBgJCapqf7"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)  [["email", "kieran@west.com"], ["encrypted_password", "$2a$04$ukLRE2BK2P8FRLYAp0MyWe4fR/.iCHD98oYlr39y7r14A75nIjZnK"], ["created_at", "2016-03-27 15:24:24.608076"], ["updated_at", "2016-03-27 15:24:24.608076"], ["auth_token", "A53TzJ9pSqJBgJCapqf7"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'justine@sawayn.name' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "XAsJ5CjBwVPxxWJF5xZr"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)[0m  [["email", "justine@sawayn.name"], ["encrypted_password", "$2a$04$7U6Mq5hLlvIIxzB/XNt0p.BAVFUDGs875T48XXr7ZS9XHs06tVR9u"], ["created_at", "2016-03-27 15:24:24.615778"], ["updated_at", "2016-03-27 15:24:24.615778"], ["auth_token", "XAsJ5CjBwVPxxWJF5xZr"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = ? LIMIT 1[0m  [["auth_token", "XAsJ5CjBwVPxxWJF5xZr"]]
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'kaia_waters@mraz.name' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "PpLsGZg4W5VQkzoDsLGZ"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)[0m  [["email", "kaia_waters@mraz.name"], ["encrypted_password", "$2a$04$y8SeDxHPhlIV0AZ8GKpoD.s9MJyWJKNpkc528eiKOKn5M28ECMiKe"], ["created_at", "2016-03-27 15:24:24.621949"], ["updated_at", "2016-03-27 15:24:24.621949"], ["auth_token", "PpLsGZg4W5VQkzoDsLGZ"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by Api::V1::UsersController#destroy as application/vnd.basic_api_user_auth.v1
+  Parameters: {"id"=>"3", "user"=>{}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "PpLsGZg4W5VQkzoDsLGZ"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 204 No Content in 1ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'solon.mann@russel.info' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "3AkMJD_GSUkafsXiN5T5"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)[0m  [["email", "solon.mann@russel.info"], ["encrypted_password", "$2a$04$5QqzVEJolTqDX3t9/JWIOe1uf9.OryZtlrORn/JEkwcdvEkq8p1wm"], ["created_at", "2016-03-27 15:24:24.632590"], ["updated_at", "2016-03-27 15:24:24.632590"], ["auth_token", "3AkMJD_GSUkafsXiN5T5"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by Api::V1::UsersController#update as application/vnd.basic_api_user_auth.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "3AkMJD_GSUkafsXiN5T5"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."auth_token" = '3AkMJD_GSUkafsXiN5T5' AND "users"."id" != 4) LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'newmail@example.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "email" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["email", "newmail@example.com"], ["updated_at", "2016-03-27 15:24:24.639123"], ["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by Api::V1::UsersController#update as application/vnd.basic_api_user_auth.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "3AkMJD_GSUkafsXiN5T5"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."auth_token" = '3AkMJD_GSUkafsXiN5T5' AND "users"."id" != 4) LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'newmail@example.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "email" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["email", "newmail@example.com"], ["updated_at", "2016-03-27 15:24:24.651603"], ["id", 4]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by Api::V1::UsersController#update as application/vnd.basic_api_user_auth.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "3AkMJD_GSUkafsXiN5T5"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."auth_token" = '3AkMJD_GSUkafsXiN5T5' AND "users"."id" != 4) LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bademail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 6ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#update as application/vnd.basic_api_user_auth.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = ? LIMIT 1[0m  [["auth_token", "3AkMJD_GSUkafsXiN5T5"]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."auth_token" = '3AkMJD_GSUkafsXiN5T5' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bademail.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 10ms (Views: 4.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by Api::V1::UsersController#update as application/vnd.basic_api_user_auth.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "3AkMJD_GSUkafsXiN5T5"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."auth_token" = '3AkMJD_GSUkafsXiN5T5' AND "users"."id" != 4) LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bademail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 6ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.basic_api_user_auth.v1
+  Parameters: {"user"=>{"email"=>"toy_ritchie@altenwerth.us", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'toy_ritchie@altenwerth.us' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "z74jABsfK5DtKYzyAME9"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)[0m  [["email", "toy_ritchie@altenwerth.us"], ["encrypted_password", "$2a$04$8xo0STHZLJ9iPvKHCehmc.AjMKll3q7wl5Ca0ehMpOvXlzH28rMaS"], ["created_at", "2016-03-27 15:24:24.694805"], ["updated_at", "2016-03-27 15:24:24.694805"], ["auth_token", "z74jABsfK5DtKYzyAME9"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 201 Created in 7ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.basic_api_user_auth.v1
+  Parameters: {"user"=>{"email"=>"toy_ritchie@altenwerth.us", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'toy_ritchie@altenwerth.us' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "UecECk9pwA9jbM4bZnNS"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)[0m  [["email", "toy_ritchie@altenwerth.us"], ["encrypted_password", "$2a$04$/JwRXp2HSevNPHdc7DfSDe3ipTUU1iysBhcuRqDbPHapqqGtfehf2"], ["created_at", "2016-03-27 15:24:24.716361"], ["updated_at", "2016-03-27 15:24:24.716361"], ["auth_token", "UecECk9pwA9jbM4bZnNS"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 201 Created in 10ms (Views: 4.6ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.basic_api_user_auth.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by Api::V1::UsersController#create as application/vnd.basic_api_user_auth.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 7ms (Views: 4.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.basic_api_user_auth.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 7ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'zakary@langworthkunze.ca' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "VsVSuXypKuY5skoJmJen"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)[0m  [["email", "zakary@langworthkunze.ca"], ["encrypted_password", "$2a$04$k7TbjIqddB3swPlNZLZKXOHJECX8NrVf.iF2GqMjvx7VYFhje1SbG"], ["created_at", "2016-03-27 15:24:24.754585"], ["updated_at", "2016-03-27 15:24:24.754585"], ["auth_token", "VsVSuXypKuY5skoJmJen"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by Api::V1::UsersController#show as application/vnd.basic_api_user_auth.v1
+  Parameters: {"id"=>"5", "user"=>{}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+Completed 200 OK in 21ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#show as application/vnd.basic_api_user_auth.v1
+  Parameters: {"id"=>"5", "user"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'saul@anderson.us' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1[0m  [["auth_token", "5Lv5FBn-zoxxM2uYEigN"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)  [["email", "saul@anderson.us"], ["encrypted_password", "$2a$04$BYVEgZmdZ7Cf4JhBYenQm.P80w6NOa6iyP4sraTfUlBZP3R.nWI.6"], ["created_at", "2016-03-27 15:24:24.793323"], ["updated_at", "2016-03-27 15:24:24.793323"], ["auth_token", "5Lv5FBn-zoxxM2uYEigN"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::SessionsController#create as application/vnd.basic_api_user_auth.v1
+  Parameters: {"session"=>{"email"=>"saul@anderson.us", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "saul@anderson.us"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-03-27 15:24:24.801311"], ["current_sign_in_at", "2016-03-27 15:24:24.801311"], ["last_sign_in_ip", "0.0.0.0"], ["current_sign_in_ip", "0.0.0.0"], ["sign_in_count", 1], ["updated_at", "2016-03-27 15:24:24.801781"], ["id", 6]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "NuirCE3bFGjEvgs_pSja"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."auth_token" = 'NuirCE3bFGjEvgs_pSja' AND "users"."id" != 6) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "users" SET "auth_token" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["auth_token", "NuirCE3bFGjEvgs_pSja"], ["updated_at", "2016-03-27 15:24:24.803741"], ["id", 6]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'constantin_gulgowski@paucek.info' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1[0m  [["auth_token", "hbc_sNF3VC5dYkjDxgqC"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)  [["email", "constantin_gulgowski@paucek.info"], ["encrypted_password", "$2a$04$RbIpp2G1Bpvbt0dz0uaW2OIpKBs5xMFsqXF4RQOoQThxdB.SrpQsq"], ["created_at", "2016-03-27 15:24:24.815997"], ["updated_at", "2016-03-27 15:24:24.815997"], ["auth_token", "hbc_sNF3VC5dYkjDxgqC"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::SessionsController#create as application/vnd.basic_api_user_auth.v1
+  Parameters: {"session"=>{"email"=>"constantin_gulgowski@paucek.info", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "constantin_gulgowski@paucek.info"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-03-27 15:24:24.821529"], ["current_sign_in_at", "2016-03-27 15:24:24.821529"], ["last_sign_in_ip", "0.0.0.0"], ["current_sign_in_ip", "0.0.0.0"], ["sign_in_count", 1], ["updated_at", "2016-03-27 15:24:24.821907"], ["id", 6]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "wubc_zh_JiB2DYUe3wdt"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."auth_token" = 'wubc_zh_JiB2DYUe3wdt' AND "users"."id" != 6) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "users" SET "auth_token" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["auth_token", "wubc_zh_JiB2DYUe3wdt"], ["updated_at", "2016-03-27 15:24:24.824374"], ["id", 6]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 11ms (Views: 4.6ms | ActiveRecord: 0.6ms)
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'maddison@dicki.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "xPofwgyDyLwuEqE-2SFw"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)[0m  [["email", "maddison@dicki.com"], ["encrypted_password", "$2a$04$zYPsBHWDtPOrIiFIgCbqvejs9dPtDbFiQAyWvwHtcK9KMLmLdbP2y"], ["created_at", "2016-03-27 15:24:24.837761"], ["updated_at", "2016-03-27 15:24:24.837761"], ["auth_token", "xPofwgyDyLwuEqE-2SFw"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::SessionsController#create as application/vnd.basic_api_user_auth.v1
+  Parameters: {"session"=>{"email"=>"maddison@dicki.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "maddison@dicki.com"]]
+Completed 422 Unprocessable Entity in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'maryjane_ruecker@wisozkhalvorson.us' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1[0m  [["auth_token", "HyeTyeALRjnXFSziPgi2"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)  [["email", "maryjane_ruecker@wisozkhalvorson.us"], ["encrypted_password", "$2a$04$DOggWIuznLvKdLv6OaoZWeYvR3DUD0ZmARp/ZNhlQGuJjo6jZx0NW"], ["created_at", "2016-03-27 15:24:24.849107"], ["updated_at", "2016-03-27 15:24:24.849107"], ["auth_token", "HyeTyeALRjnXFSziPgi2"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::SessionsController#create as application/vnd.basic_api_user_auth.v1
+  Parameters: {"session"=>{"email"=>"maryjane_ruecker@wisozkhalvorson.us", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "maryjane_ruecker@wisozkhalvorson.us"]]
+Completed 422 Unprocessable Entity in 7ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = '' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'monroe@farrell.ca' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1[0m  [["auth_token", "yQ2xzMnAqM7JCMzo_6K4"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "auth_token") VALUES (?, ?, ?, ?, ?)  [["email", "monroe@farrell.ca"], ["encrypted_password", "$2a$04$55FzZOt6YDjlrlYJMwWvSei2vZVxuvdOxecHmmzUc.5WteuASZjX."], ["created_at", "2016-03-27 15:24:24.861739"], ["updated_at", "2016-03-27 15:24:24.861739"], ["auth_token", "yQ2xzMnAqM7JCMzo_6K4"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::SessionsController#destroy as application/vnd.basic_api_user_auth.v1
+  Parameters: {"id"=>"yQ2xzMnAqM7JCMzo_6K4", "session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."auth_token" = ? LIMIT 1[0m  [["auth_token", "yQ2xzMnAqM7JCMzo_6K4"]]
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."auth_token" = ? LIMIT 1  [["auth_token", "qoFWZW-JVpXRrGs2TguH"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."auth_token" = 'qoFWZW-JVpXRrGs2TguH' AND "users"."id" != 6) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "auth_token" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["auth_token", "qoFWZW-JVpXRrGs2TguH"], ["updated_at", "2016-03-27 15:24:24.869249"], ["id", 6]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 204 No Content in 2ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
